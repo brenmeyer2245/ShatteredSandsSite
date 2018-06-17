@@ -1,0 +1,249 @@
+/*Shattered Sands CSS 6/6/2018*/
+
+
+/*Header and Filter Bar */
+.header{
+
+  background-image: url('/Users/brenmeyer/Desktop/Programming/Web_Projects/BWS/pics/Perisan_Palace.jpg');
+  background-size: cover;
+  background-position: 25% 33%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  width: calc(100vw);
+  height: calc(90% - 5em);
+  border-radius: 1%;
+  color: #fff;
+  font-family: Luminari;
+
+/*    Make 10em*/
+ transform: translateY(-55em);
+  transition: all 2s;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 3em;
+  box-shadow: 3em white;
+
+
+}
+.header.active{
+/*    add active class to the header when scroll > 10*/
+
+  transform: translateY(8em);
+}
+
+#filter{
+  position: absolute;
+  right: 10em;
+  top: 5em;
+  height: 3em;
+  border: 2px solid black;
+
+}
+
+#filter button {
+  width: 5em;
+  background-color:rgba(6,6,69,.9);
+  color:white;
+}
+
+#filter input{
+  background-color:rgba(6,6,69,.5);
+  color: white;
+}
+
+
+
+/*General Classes*/
+.center{
+  text-align: center;
+}
+
+.flex{
+  display: flex;
+}
+
+.flexDown{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Content*/
+
+body{
+  background-image: url('/Users/brenmeyer/Desktop/Programming/Web_Projects/BWS/pics/Sharakhai-City-color-final.jpg');
+  background-position:110px 10px;
+  background-size: 70%;
+}
+
+#content_frame{
+  position:relative;
+  border: 1px solid black;
+  width: 105em;
+  top: 10em;
+  margin-left: calc(50% - 52em);
+
+}
+.pageLeft{
+  background-color:rgba(113,2,2);
+  flex: 1 1 20%;
+
+}
+.pageRight{
+ background-color:white;
+  flex: 3 3 80%;
+}
+
+.menuItems{
+  border: 1px solid black;
+  text-shadow: white;
+  text-align: center;
+  min-height: 4em;
+}
+
+
+/* Page Left Items*/
+
+.itemBlock{
+  background-color: #ffffcc;
+  display: none;
+  transition: all 3s;
+}
+
+
+
+.characterItems{
+  list-style: none;
+}
+
+#picBook{
+  position:relative;
+  bottom: 89.5em;
+  border:1px solid black;
+  background-color:rgba(113,2,2);
+  outline: none;
+  height: 60em;
+  width:53em;
+  display:none;
+  transition: display 2s;
+}
+#picBook.opened{
+  display:flex;
+}
+
+#party_main_card{
+  border: 1px solid black;
+  flex-wrap: wrap;
+}
+
+#party_main_card div{
+  margin: 1em;
+  max-height: 19em;
+  align-items: center;
+  background-color:white;
+  box-shadow: .7em .7em rgba(12,1,1,.2);
+}
+
+#party_main_card img{
+  height:17em;
+  min-width: 14em;
+}
+
+#picBook .picLib{
+  float: left;
+  height: 50em;
+  padding: 1em;
+  display:none;
+}
+
+#party_main_card .active{
+  position: relative;
+  top: 20em;
+  left: 25em;
+}
+
+
+/*Page Right Items*/
+
+/*Episode Items*/
+.episode_card{
+  border: 1px solid black;
+
+}
+
+.episode_content{
+
+}
+
+.episode_title{
+  text-shadow: 3px 3px #f3f3f3;
+}
+
+.episode_icon{
+  flex: 2;
+  text-align: left;
+  max-width: 25em;
+}
+
+.episode_icon img{
+  max-width: 20em;
+  min-width: 20em;
+  margin-left: .5em;
+  margin-bottom: .5em
+}
+
+.episode_text{
+  flex: 30%;
+  flex-direction: column;
+  align-items:flex-start;
+  text-align: left;
+
+  margin: 1em;
+}
+.episode_text p{
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.episode-audio{
+  align-items: flex-end;
+  width:100%;
+}
+
+
+/*Footer Audio player*/
+#footer-player{
+  background-color:skyblue;
+
+
+  position:fixed;
+  bottom:0;
+  margin-left: calc(.5em);
+  display:none;
+
+  height:6em;
+  width: 35em;
+  align-items: flex-end;
+}
+#footer-player img{
+  max-height: 6em;
+  max-width: 10em;
+}
+#footer-audio-container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 99%;
+}
+#footer-audio-container audio{
+  width: 100%;
+}
+
+.darkened{
+  background: rgba(0,0,0,.8);
+}
+
+
+
